@@ -1,0 +1,128 @@
+/* Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Shared Styles */
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 140px;
+}
+
+.btn-primary {
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    border: 0px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+
+/* Nav related styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.nav-title {
+    font-family: "work sans", sans-serif;
+    font-size: 2.88rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+
+}
+
+/* banner styles */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: rgb(19, 19, 19);
+  font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    color: rgb(114, 114, 114);
+    font-weight: 400;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 20px;
+}
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Teams styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+    max-width: 1320px;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.24rem;
+    margin-top: 40px;
+}
+.teams-content{
+    padding-left: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.quick-list{
+    color: rgb(114, 114, 114);
+    font-weight: 500;
+}
+.teams-features{
+    color: rgb(255, 144, 14);
+    font-weight: 700;
+}
+
+/* Responsive Styles */
+/* Movile Design Layout */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* Tablet design layout */
+@media screen and (min-width:576px)and (max-width:960px){
+    header{
+        padding: 50px;
+    }
+}
